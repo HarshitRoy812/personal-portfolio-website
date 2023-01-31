@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+    
+html,body {
+    width : 100vw;
+    height : 100vh;
+    overflow-x : hidden;
+}
+
+#header {
+    width : 100%;
+    height : 421px;
+    background : #06d6a0;
+    overflow: hidden;
+    display : flex;
+    flex-direction : row;
+}
+
+#navbar {
+    width : 700px;
+    height : 100%;
+    display : flex;
+    flex-direction : column;
+}
+
+#navigation {
+    display : flex;
+    height : 100px;
+    width : 100%;
+    flex-direction: row;
+    gap : 100px;
+    padding : 0px;
+    align-items : center;
+}
+
+.header_img {
+    width : 120px;
+    height : 80%;
+    background-image : url('./images//header_logo.png');
+    background-position: center;
+    background-size: cover;
+    margin-left : 30px;
+}
+
+#nav_links {
+    display : flex;
+    flex-direction: row;
+    align-items : flex-start;
+    padding : 0px;
+    gap : 33px;
+    flex : none;
+    order : 1;
+    flex-grow : 0;
+}
+.nav_link {
+    list-style : none;
+    font-family : 'Lexend Deca';
+    font-style : normal;
+    font-weight: 800;
+    font-size : 20px;
+    line-height : 31px;
+    cursor: pointer;
+    color : #1d3557;
+    transition : 0.3s;
+}
+.nav_link:hover {
+    transform : translateY(-6%);
+    text-shadow : 0 5px 10px rgba(0,0,0,0.5);
+}
+
+#header_info {
+    display : flex;
+    width : 100%;
+    height : 100%;
+    flex-direction: row;
+    align-items : center;
+}
+
+#header_info h1 {
+    font-family: 'Lexend Deca';
+    font-style : normal;
+    font-weight: 900;
+    line-height: 57px;
+    letter-spacing: -0.05em;
+    width : 400px;
+    font-size : 70px;
+    margin-left : 50px;
+    color : #1d3557;
+}
+#personal_img {
+    position : relative;
+    width : 300px;
+    height: 350px;
+    right : 140px;
+    top : 30px;
+}
+
+#header_circle {
+    height : 500px;
+    width : 400px;
+    background : #0f4c5c;
+    margin-left: auto;
+    border-radius: 50%;
+    transform : scale(1.5,1.5);
+    display : flex;
+    align-items: center;
+}
+
+#header_circle h1 {
+    color : #ffffff;
+    font-family: 'Permanent Marker';
+    font-size : 17px;
+    transform : rotate(-9.03deg);
+    font-weight: 400;
+    font-style : normal;
+    width : 200px;
+    line-height: 20px;
+    position : relative;
+    left : 70px;
+    top : -50px;
+}
+
+#header_circle_social {
+    display : flex;
+    flex-direction: row;
+    align-items : center;
+    padding : 0px;
+    gap : 50px;
+    justify-content: center;
+    margin-right : 200px;
+    margin-top : 100px;
+    width : 200px;
+}
+
+#header_circle_social img {
+    width : 30px;
+    height : 30px;
+    flex : none;
+    order : 0;
+    flex-grow : 0;
+    transition : 0.3s ease-in-out;
+}
+#header_circle_social img:hover {
+    transform : translateY(-6%);
+}
