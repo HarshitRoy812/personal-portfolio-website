@@ -149,3 +149,125 @@ html,body {
 #header_circle_social img:hover {
     transform : translateY(-6%);
 }
+
+#about {
+    display : flex;
+    flex-direction : row;
+    height : 400px;
+    width : 100%;
+}
+#about_first {
+    display : flex;
+    flex-direction : column;
+    width : 60%;
+}
+.section_heading {
+    width : 100px;
+    height : 100px;
+    line-height : 30px;
+    font-family : 'Lexend Deca';
+    margin : 30px;
+    color : #1d3557;
+    font-style : normal;
+    font-weight: 800;
+}
+.section_header {
+    position : relative;
+    width : 200px;
+    min-height : 100px;
+    display : flex;
+    flex-direction: column;
+    margin : 20px;
+}
+.underline {
+    position : absolute;
+    width : 100px;
+    height : 100px;
+    top : 40px;
+    left : 25px;
+    transform : rotate(3.93deg);
+    z-index: -1;
+}
+#about_content {
+    display : flex;
+    flex-direction : column;
+    width : 100%;
+    height : 100%;
+    justify-content: space-around;
+}
+#about_content p {
+    color : #3f4a48;
+    font-style : normal;
+    font-weight: 200;
+    width : 600px;
+    margin : auto;
+    font-size : 17px;
+    font-family: 'Lexend Deca';
+    letter-spacing: 0.04em;
+}
+
+#read_more_btn {
+    width : 150px;
+    height : 40px;
+    background : #06d6a0;
+    outline : none;
+    border : none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    margin-left : 157px;
+    transition : 0.3s;
+}
+#read_more_btn:hover {
+    background : #07b989;
+    box-shadow : 0 3px 5px rgba(0,0,0,0.3);
+}
+
+
+#about_second {
+    width : 500px;
+    height : 100%;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+#pic_frame {
+    position: relative;
+    margin-top : 50px;
+    width : 400px;
+    height : 350px;
+    border : 6px solid rgba(28,206,99,0.7);
+}
+.personal_pic {
+    position: absolute;
+    border-radius: 50%;
+    height : 200px;
+    width: 200px;
+    top : -40px;  
+    left : -40px;  
+    box-shadow : 0 3px 5px rgba(0,0,0,0.25);
+}
+#pic_frame_social {
+    display : flex;
+    flex-direction: row;
+    width : 150px;
+    height : 40px;
+    position : absolute;
+    bottom : 0;
+    left : 0;
+    justify-content: space-around;
+    align-items: center;
+}
+.pic_frame_social_img{
+    width : 20px;
+    height : 20px;
+    transition : 0.2s ease-in-out;
+}
+.pic_frame_social_img:hover {
+    transform : translateY(-6%);
+}
