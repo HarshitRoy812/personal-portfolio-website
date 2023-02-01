@@ -271,3 +271,95 @@ html,body {
 .pic_frame_social_img:hover {
     transform : translateY(-6%);
 }
+
+#skills {
+    margin-top : 50px;
+}
+.skills_header {
+    margin : auto;
+}
+.skills_heading {
+    line-height : 60px;
+}
+.underline_skills {
+    top : 30px;
+}
+
+#skills_content {
+    display : flex;
+    flex-direction : row;
+    width : 100%;
+    height : 400px;
+}
+.skill {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width : 400px;
+    height : 330px;
+    background: linear-gradient(to right,rgba(2, 122, 122, 0.72),rgba(2, 122, 122, 0.72)),url('./images/web_development.png');
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transition : 0.3s ease-in-out;
+}
+.skill:hover {
+    box-shadow : 4px 8px 6px rgba(0, 0, 0, 0.25);
+}
+.skill h1 {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 44px;
+    color : #ffffff;
+    margin-top : 30px;
+}
+.skill p {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 160.5%;
+    color : #ffffff;
+    text-align: center;
+    padding : 15px;
+    
+}
+.web_development{
+    position : relative;
+    right : 120px;
+}
+#arrow {
+    width : 150px;
+    height: 150px;
+    margin-top : 160px;
+    position : relative;
+    right : 30px;
+}
+.data_science {
+    background: linear-gradient(to right,rgba(117, 2, 85, 0.68),rgba(117, 2, 85, 0.68)),url('./images/web_development.png');
+    align-self : flex-end;
+    position : relative;
+    left : 90px;
+}
+.range {
+    width : 200px;
+    height : 30px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    align-self: flex-start;
+    margin-left : 20px;
+    margin-bottom : 15px;
+}
+#range_web_development{
+    width : 170px;
+    height : 30px;
+    background: #00ECA5;
+}
+#range_data_science {
+    width : 120px;
+    height : 30px;
+    background: rgba(228, 0, 164, 0.68);
+}
