@@ -6,7 +6,7 @@
 
     <title> Personal Website </title>
 
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
 
 </head>
@@ -25,10 +25,10 @@
                         <div class = 'header_img'> </div>
 
                         <ul id = 'nav_links'>
-                            <li class = 'nav_link'> <a> Home </a> </li>
-                            <li class = 'nav_link'> <a> About </a> </li>
-                            <li class = 'nav_link'> <a> Projects </a> </li>
-                            <li class = 'nav_link'> <a> Contact </a> </li>
+                            <li class = 'nav_link'> <a href = "#navigation"> Home </a> </li>
+                            <li class = 'nav_link'> <a href = "#about"> About </a> </li>
+                            <li class = 'nav_link'> <a href = "#projects"> Projects </a> </li>
+                            <li class = 'nav_link'> <a href = "#contact"> Contact </a> </li>
                         </ul>
 
                     </div> <!-- Navigation close tag -->
@@ -141,7 +141,124 @@
             </div>
     
         </div> <!-- End of skills section -->
-        <br> <br>
+        
+        <div id = 'projects'>
+            <div class = 'section_header projects_header'>
+                <h1 class = 'section_heading projects_heading'> projects </h1>
+                <img class = 'underline underline_projects' src = './images/underline.svg'>
+            </div>
+
+            <div id = 'projects_content'>
+
+                <div class = 'project'>
+
+                    <div class = 'project_bg plant'>
+                        
+                    </div>
+
+                    <div class = 'project_img plant_img'>
+
+                    </div>
+
+                    <div class = 'project_info'>
+                        <h1> <span> #1 </span> Plant Website </h1> 
+
+                        <p> Created this website using the magic of React. Contains information about different plants and their species. This website represents only the front-end part and was meant for design purposes.</p>
+                    </div>
+
+                </div>
+
+                <div class = 'project'>
+
+                    <div class = 'project_bg weather'>
+                        
+                    </div>
+
+                    <div class = 'project_img weather_img'>
+
+                    </div>
+
+                    <div class = 'project_info'>
+                        <h1> <span> #2 </span> Weather App </h1> 
+
+                        <p> Created this website using the magic of React and Fetch API. Fully-functional website with weather information , times and dates. Also the location can be provided with the specific timezone of the area. </p>
+                    </div>
+
+                </div>
+
+                <div class = 'project'>
+
+                    <div class = 'project_bg notes'>
+                        
+                    </div>
+
+                    <div class = 'project_img notes_img'>
+
+                    </div>
+
+                    <div class = 'project_info'>
+                        <h1> <span> #3 </span> Notes App </h1> 
+
+                        <p> Created this fully-functional notes app using the magic of Express , NodeJS and MongoDB. A dynamic website where u can create , review , update and delete your notes. </p>
+                    </div>
+
+                </div>
+
+            </div> <!-- End of projects content section -->
+
+        </div> <!-- End of projects section -->
+
+        <div id = 'contact'>
+
+            <div class = 'section_header contact_header'>
+                <h1 class = 'section_heading contact_heading'> contact me </h1>
+                <img class = 'underline underline_contact' src = './images/underline.svg'>
+            </div>
+
+            <div id = 'contact_content'>
+                <div id = 'contact_section'>
+
+                    <p id = 'contact_heading'> Feel free to get in touch with me </p>
+
+                    <div class = 'form'>
+                        <label> Name </label>
+                        <input type = 'text'>   
+                    </div>
+
+                    <div class = 'form'>
+                        <label> email </label>
+                        <input type = 'email'>   
+                    </div>
+
+                    <button type = 'submit' id = 'contact_btn'> SEND </button>
+
+                    <div id = 'contact_extra'>
+                        <p class = 'contact_p'> 23 Northville Street , MN , USA </p>
+                        <p class = 'contact_p'> john@gmail.com </p>
+                        <p class = 'contact_p'> XXXX-XXXXXX-XXXX </p>
+                    </div>
+
+                </div>  <!-- End of contact sections section -->
+            </div> <!-- End of contact content section -->
+
+        </div> <!-- End of contact section -->
+
+        <div id = 'footer'>
+            <div id = 'footer_info'>
+                <p> Copyright @2023 , Inc </p>
+                <p> <a> Privacy Policy </a> | <a> Terms and Conditions </a> | <a> Legal Use </a> </p>
+            </div>
+
+            <button type = 'button' id = 'resume_btn'> <a href = "D:\Backend Development\PROJECTS\Personal Website\resume.docx" download = 'resume.docx'> <i class="fa-solid fa-download"></i> DOWNLOAD MY RESUME </a> </button>
+
+            <div id = 'footer_social'>
+                <a href = 'https://www.instagram.com' target = '_blank'> <i class="fa-brands fa-instagram" id = 'insta'></i> </a>
+                <a href = 'https://www.facebook.com' target = '_blank'> <i class="fa-brands fa-facebook" id = 'fb'></i> </a>
+                <a href = 'https://www.linkedin.com' target = '_blank'> <i class="fa-brands fa-linkedin" id = 'linkedin'></i> </a>
+            </div>
+
+        </div> <!-- End of footer section -->
+        
     </main>
 
 
