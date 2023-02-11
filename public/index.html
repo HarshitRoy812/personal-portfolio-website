@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> Personal Website </title>
+    <title> Harshit Roy - Personal Website </title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
@@ -78,7 +78,7 @@
                 <div id = 'about_content'>
 
                     <p> I am a university student trying to discover endless opportunities 
-                        in the field of data data science and full stack development and am
+                        in the field of data science and full stack development and am
                         fond of learning new languages. Have expertise in many programming 
                         languages such as Python , C++ , R and Java and like to code in free time.
                         <br> 
@@ -86,7 +86,7 @@
                         amazing photo-capturing skills.
                     </p>
 
-                    <button type = 'button' id = 'read_more_btn'> READ MORE .. </button>
+    
 
                 </div> <!-- End of about content -->
 
@@ -164,6 +164,7 @@
                         <h1> <span> #1 </span> Plant Website </h1> 
 
                         <p> Created this website using the magic of React. Contains information about different plants and their species. This website represents only the front-end part and was meant for design purposes.</p>
+                        <a href  = "https://harshitroy812.github.io/plant-website-react" target = "_blank" class = 'website-btn'> VISIT WEBSITE </a>
                     </div>
 
                 </div>
@@ -182,6 +183,7 @@
                         <h1> <span> #2 </span> Weather App </h1> 
 
                         <p> Created this website using the magic of React and Fetch API. Fully-functional website with weather information , times and dates. Also the location can be provided with the specific timezone of the area. </p>
+                        <a href  = "https://harshitroy812.github.io/weather-app/" target = "_blank" class = 'website-btn'> VISIT WEBSITE </a>
                     </div>
 
                 </div>
@@ -200,6 +202,7 @@
                         <h1> <span> #3 </span> Notes App </h1> 
 
                         <p> Created this fully-functional notes app using the magic of Express , NodeJS and MongoDB. A dynamic website where u can create , review , update and delete your notes. </p>
+                        <a href  = "https://notes-app-brq7.onrender.com/" target = "_blank" class = 'website-btn'> VISIT WEBSITE </a>
                     </div>
 
                 </div>
@@ -218,16 +221,26 @@
             <div id = 'contact_content'>
                 <div id = 'contact_section'>
 
-                    <p id = 'contact_heading'> Feel free to get in touch with me </p>
+                    <p id = 'contact_heading'> Feel free to get in touch with me ! </p>
 
                     <div class = 'form'>
-                        <label> Name </label>
-                        <input type = 'text'>   
+                        <label class = 'name_label'> Name </label>
+                        <input type = 'text' id = 'name' required>   
                     </div>
 
                     <div class = 'form'>
-                        <label> email </label>
-                        <input type = 'email'>   
+                        <label class = 'email_label'> email </label>
+                        <input type = 'email' id = 'email' required>   
+                    </div>
+                    
+                    <div class = 'form'>
+                        <label class = 'comments'> Message </label>
+                        <textarea id = 'comment'></textarea>
+                    </div>
+
+                    <div class = 'form'>
+                        <p id = 'contact_err_msg'> Please fill all the details. </p>
+                        <p id = 'contact_ok'> <i class = 'fas fa-check'> </i> E-Mail sent !</p>
                     </div>
 
                     <button type = 'submit' id = 'contact_btn'> SEND </button>
@@ -249,7 +262,7 @@
                 <p> <a> Privacy Policy </a> | <a> Terms and Conditions </a> | <a> Legal Use </a> </p>
             </div>
 
-            <button type = 'button' id = 'resume_btn'> <a href = "D:\Backend Development\PROJECTS\Personal Website\resume.docx" download = 'resume.docx'> <i class="fa-solid fa-download"></i> DOWNLOAD MY RESUME </a> </button>
+            <button type = 'button' id = 'resume_btn'>   <a href = "../resume.docx" download = 'resume.docx'> <i class="fa-solid fa-download"></i> DOWNLOAD MY RESUME </a> </button>
 
             <div id = 'footer_social'>
                 <a href = 'https://www.instagram.com' target = '_blank'> <i class="fa-brands fa-instagram" id = 'insta'></i> </a>
@@ -262,6 +275,14 @@
     </main>
 
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("ek779iw4sBCE1-pKG");
+        })();
+    </script>
     <script src = 'index.js'> </script> 
 
 </body>
