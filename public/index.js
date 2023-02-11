@@ -59,3 +59,36 @@ send_btn.addEventListener('click',() => {
     contactSuccessfulMsg.style.display = 'block';
     contactSuccessfulMsg.style.animationName = 'slideover';
 })
+
+
+var addCommentBtn = document.getElementById('add_comment_btn');
+var commentForm = document.getElementById('comment_form');
+var commentSection = document.getElementById('comment_section');
+var closeBtn = document.getElementById('close_btn');
+var commentHeading = document.getElementById('comment_heading');
+
+addCommentBtn.addEventListener('click',() => {
+    
+
+    if (commentForm.style.display == 'none'){
+        commentForm.style.display = 'flex';
+        addCommentBtn.style.opacity = '0.6';
+        commentHeading.style.opacity = '0.6';
+        addCommentBtn.disabled = true;
+        addCommentBtn.style.pointerEvents = 'none';
+    }
+    else {
+        commentForm.style.display = 'none';
+    }
+})
+
+
+
+closeBtn.addEventListener('click',() => {
+    commentForm.style.display = 'none';
+    commentHeading.style.opacity = '1';
+    addCommentBtn.style.opacity = '1';
+    addCommentBtn.disabled = false;
+    addCommentBtn.style.pointerEvents = 'auto';
+
+})

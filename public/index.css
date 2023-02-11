@@ -43,8 +43,8 @@ html,body {
 
 .header_img {
     width : 120px;
-    height : 80%;
-    background-image : url('./images//header_logo.png');
+    height : 150%;
+    background-image : url('./images/signature.png');
     background-position: center;
     background-size: cover;
     margin-left : 30px;
@@ -262,7 +262,7 @@ html,body {
 .skills_header,.projects_header,.contact_header {
     margin : auto;
 }
-.skills_heading,.projects_heading,.contact_heading{
+.skills_heading,.projects_heading,.contact_heading,.comments_heading{
     line-height : 60px;
 }
 .contact_heading {
@@ -601,6 +601,116 @@ html,body {
     line-height: 30px;
 }
 
+#comments_section {
+    display : flex;
+    width : 100%;
+    min-height : 350px;
+    flex-direction: column;
+    position : relative;
+}
+#comments {
+    width : 100%;
+    margin-left : 30px;
+    display : flex;
+    flex-direction: column;
+}
+
+#add_comment_btn {
+    width : 150px;
+    height : 40px;
+    background : #ffb703;
+    margin-left: 50px;
+    color : #000000;
+    border-radius: 3px;
+    font-family: 'Lexend Deca';
+    border : none;
+    outline : none;
+    cursor : pointer;
+    box-shadow : 0 3px 5px rgba(0,0,0,0.5);
+    transition : 0.3s;
+}
+#add_comment_btn:hover {
+    background : #fca311;
+    box-shadow : 0 3px 10px rgba(0,0,0,0.5);
+}
+
+#comment_form {
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    width : 400px;
+    height : 280px;
+    background : #edede9;
+    transform : translate(-50%,-50%);
+    display : none;
+    flex-direction: column;
+    align-items: center;
+    margin-top : 5px;
+    box-shadow : 0 3px 5px rgba(0,0,0,0.5);
+}
+#comment_form textarea {
+    resize : none;
+    width : 300px;
+    height : 50px;
+}
+#comment_form input[type='text'] {
+    margin-top : 10px;
+    width : 300px;
+    height : 30px;
+    outline : none;
+    border : none;
+    border-radius: 3px;
+    text-indent: 5px;
+    font-family: 'Lexend Deca';
+    font-weight: 300;
+    font-size: 15px;
+    padding : 5px;
+    box-shadow : 0 3px 3px rgba(0,0,0,0.5);
+    transition : 0.2s;
+}
+
+#comment_form label {
+    font-family: 'Lexend Deca';
+}
+
+.form_div {
+    width : 300px;
+    margin-top : 20px;
+}
+
+#post_comment_btn {
+    width : 150px;
+    height : 40px;
+    padding : 5px;
+    background : #ffb703;
+    color : #000000;
+    border-radius: 3px;
+    font-family: 'Lexend Deca';
+    border : none;
+    outline : none;
+    cursor : pointer;
+    box-shadow : 0 3px 5px rgba(0,0,0,0.5);
+    transition : 0.3s;
+    margin-top : 30px;
+    margin-left : 50px;
+}
+#close_btn {
+    position : absolute;
+    right : 15px;
+    top : 10px;
+    background : #e63946;
+    color : #ffffff;
+    border-radius: 50%;
+    padding : 5px;
+    width : 25px;
+    height : 25px;
+    text-align: center;
+    cursor: pointer;
+    transition : 0.3s;
+}
+#close_btn:hover {
+    background : #a71c27;
+}
 
 #footer {
     display : flex;

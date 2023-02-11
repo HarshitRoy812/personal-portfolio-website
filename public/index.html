@@ -243,11 +243,11 @@
                         <p id = 'contact_ok'> <i class = 'fas fa-check'> </i> E-Mail sent !</p>
                     </div>
 
-                    <button type = 'submit' id = 'contact_btn'> SEND </button>
+                    <button type = 'submit' id = 'contact_btn'> SEND <i class="fa-solid fa-envelope"></i> </button>
 
                     <div id = 'contact_extra'>
-                        <p class = 'contact_p'> 23 Northville Street , MN , USA </p>
-                        <p class = 'contact_p'> john@gmail.com </p>
+                        <p class = 'contact_p'> 23 Northville Street , IL , USA </p>
+                        <p class = 'contact_p'> royharshit812@gmail.com </p>
                         <p class = 'contact_p'> XXXX-XXXXXX-XXXX </p>
                     </div>
 
@@ -255,6 +255,39 @@
             </div> <!-- End of contact content section -->
 
         </div> <!-- End of contact section -->
+
+        
+        <div id = 'comments_section'>
+            
+            <div class = 'section_header comments_header'>
+                <h1 class = 'section_heading comments_heading' id = 'comment_heading'> comments </h1>
+                <img class = 'underline underline_contact' src = './images/underline.svg'>
+            </div>
+
+            <div id = 'comments'>
+
+            </div>
+
+            <button id = 'add_comment_btn'> Add a Comment </button>
+
+            <div id = 'comment_form'>
+                <form>
+                    <i class="fa-solid fa-xmark" id = 'close_btn'></i>
+                    <div class = 'form_div'>
+                        <label> Your name </label> <br>
+                        <input type = 'text' required> 
+                    </div>
+
+                    <div class = 'form_div'>
+                        <label> Write your comment </label> <br>
+                        <textarea required> </textarea>
+                    </div>
+
+                    <input type = 'submit' value = 'Add Comment' id = 'post_comment_btn'> 
+                </form>
+            </div>
+
+        </div> <!-- End of comments section -->
 
         <div id = 'footer'>
             <div id = 'footer_info'>
