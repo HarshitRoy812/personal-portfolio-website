@@ -613,9 +613,14 @@ html,body {
     margin-left : 30px;
     display : flex;
     flex-direction: column;
+    margin-bottom : 50px;
+}
+.no_comments {
+    font-family: 'Lexend Deca';
+    align-self : center;
 }
 
-#add_comment_btn {
+#post_comments_btn {
     width : 150px;
     height : 40px;
     background : #ffb703;
@@ -628,10 +633,14 @@ html,body {
     cursor : pointer;
     box-shadow : 0 3px 5px rgba(0,0,0,0.5);
     transition : 0.3s;
+    margin-bottom : 15px;
 }
-#add_comment_btn:hover {
+#post_comments_btn:hover {
     background : #fca311;
     box-shadow : 0 3px 10px rgba(0,0,0,0.5);
+}
+#post_comments_btn:active {
+    transform : scale(0.94,0.94);
 }
 
 #comment_form {
@@ -647,6 +656,15 @@ html,body {
     align-items: center;
     margin-top : 5px;
     box-shadow : 0 3px 5px rgba(0,0,0,0.5);
+    animation-duration : 0.7s;
+}
+@keyframes commentslider {
+    from {
+        opacity : 0;
+    }
+    to {
+        opacity : 1;
+    }
 }
 #comment_form textarea {
     resize : none;
@@ -694,6 +712,10 @@ html,body {
     margin-top : 30px;
     margin-left : 50px;
 }
+.after_post_comment {
+    background : #354f52 !important;
+    color : #ffffff !important;
+}
 #close_btn {
     position : absolute;
     right : 15px;
@@ -711,6 +733,35 @@ html,body {
 #close_btn:hover {
     background : #a71c27;
 }
+
+#comment_err_msg {
+    color : #fb5607;
+    position : relative;
+    top : 15px;
+    font-family : 'Lexend Deca';
+    display : none;
+}
+
+.comment_div {
+    width : 30%;
+    min-height : 50px;
+    background : #d9d9d9;
+    margin-left : 30px;
+    padding : 10px;
+    font-family : 'Lexend Deca';
+    margin-top : 10px;
+}
+.comment_div h2 {
+    font-size : 20px;
+    font-weight: 600;
+}
+.comment_div p {
+    margin-top : 10px;
+    font-size : 15px;
+    font-weight: 200;
+    letter-spacing: 0.01em;
+}
+
 
 #footer {
     display : flex;

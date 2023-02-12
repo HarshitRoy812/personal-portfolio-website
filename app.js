@@ -4,6 +4,7 @@ const route = require('./routers/route');
 const connectDB = require('./db/connection');
 require('dotenv').config();
 
+app.use(express.json());
 app.use(express.static('./public'));
 
 const port = 3000;

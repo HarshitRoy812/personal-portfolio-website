@@ -268,22 +268,24 @@
 
             </div>
 
-            <button id = 'add_comment_btn'> Add a Comment </button>
+            <button id = 'post_comments_btn'> Post a Comment </button>
 
             <div id = 'comment_form'>
                 <form>
                     <i class="fa-solid fa-xmark" id = 'close_btn'></i>
                     <div class = 'form_div'>
                         <label> Your name </label> <br>
-                        <input type = 'text' required> 
+                        <input type = 'text' id = 'user_name'> 
                     </div>
 
                     <div class = 'form_div'>
                         <label> Write your comment </label> <br>
-                        <textarea required> </textarea>
+                        <textarea id = 'user_comment'></textarea>
                     </div>
+                    
+                    <p id = 'comment_err_msg'> Please fill all the details. </p>
 
-                    <input type = 'submit' value = 'Add Comment' id = 'post_comment_btn'> 
+                    <input type = 'submit' value = 'Post Comment' id = 'post_comment_btn'> 
                 </form>
             </div>
 
@@ -316,6 +318,7 @@
             emailjs.init("ek779iw4sBCE1-pKG");
         })();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src = 'index.js'> </script> 
 
 </body>
