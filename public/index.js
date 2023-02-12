@@ -122,7 +122,6 @@ const getComments = async () => {
             }
 
         }
-        console.log(comments.data.msg);
     } catch (err){
         console.log(err);
     }

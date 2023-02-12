@@ -297,7 +297,9 @@
                 <p> <a> Privacy Policy </a> | <a> Terms and Conditions </a> | <a> Legal Use </a> </p>
             </div>
 
-            <button type = 'button' id = 'resume_btn'>   <a href = "../resume.docx" download = 'resume.docx'> <i class="fa-solid fa-download"></i> DOWNLOAD MY RESUME </a> </button>
+            <form action = '/resume' method = 'get'>
+                <input type = 'submit' id = 'resume_btn' value = 'DOWNLOAD MY RESUME'>
+            </form>
 
             <div id = 'footer_social'>
                 <a href = 'https://www.instagram.com' target = '_blank'> <i class="fa-brands fa-instagram" id = 'insta'></i> </a>

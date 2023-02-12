@@ -796,6 +796,8 @@ html,body {
     margin-left : 150px;
     cursor: pointer;
     transition : 0.2s ease-in-out;
+    font-family : 'Lexend Deca';
+    margin-top : 30px;
 }
 #resume_btn:hover {
     background : #7c87d9;

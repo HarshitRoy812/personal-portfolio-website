@@ -1,4 +1,5 @@
 const Comments = require('../models/comments');
+const path = require('path');
 
 const getComments = async (req,res) => {
     
@@ -16,7 +17,15 @@ const postComments = async (req,res) => {
     res.status(201).json({msg : comments});
 }
 
+
+const getResume = async (req,res) => {
+    const filePath = path.join(__dirname,'..','resume.docx');
+    res.download(filePath);
+    
+}
+
 module.exports = {
     getComments,
-    postComments
+    postComments,
+    getResume
 };
